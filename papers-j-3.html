@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>論文紹介 3 - 押川研究室</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>押川研究室</h1>
+            <p class="subtitle">理論物理学</p>
+            <div class="lang-switch">
+                <a href="publications.html">English</a> | <span>日本語</span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index-j.html">ホーム</a></li>
+                <li><a href="members-j.html">メンバー</a></li>
+                <li><a href="contact-j.html">連絡先</a></li>
+                <li><a href="oshikawacv-j.html">教授紹介</a></li>
+                <li><a href="research-j.html">研究内容</a></li>
+                <li><a href="talks-j.html">講演記録</a></li>
+                <li><a href="papers-j-1.html" class="active">論文紹介</a></li>
+                <li><a href="gradschool-j.html">大学院</a></li>
+                <li><a href="random-j.html">よしなしごと</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-with-sidebar">
+        <aside class="sidebar">
+            <h3>論文紹介</h3>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="papers-j-1.html">第1部</a></li>
+                    <li><a href="papers-j-2.html">第2部</a></li>
+                    <li><a href="papers-j-3.html" class="active">第3部</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="papers">
+                <h2>これまでの研究成果（+余談）- 第3部</h2>
+                
+                <h3>Flux insertion と非線形伝導</h3>
+                
+                <p>
+                    （前史）
+                    上述のように、LSM定理の「証明」ではAB磁束の印加によってギャップが閉じないことを仮定していました。
+                    この仮定を外したいと思っていろいろ考えたのですが、ギャップの有無を直接論じるのを止めて、系のDrude重みに着目することを思いつきました。
+                    AB磁束の断熱的な印加によってエネルギーが増えてしまうなら、（次元にもよりますが）Drude重みが正の完全導体になっていることがわかります。
+                    これを整合性条件と結びつけることができました。
+                </p>
+                
+                <p>
+                    Masaki Oshikawa,
+                    <em>Insulator, Conductor, and Commensurability: A Topological Approach</em>
+                    <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.90.236401">Phys. Rev. Lett. 90, 236401 (2003)</a>;
+                    Erratum <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.91.109901">Phys. Rev. Lett. 91, 109901 (2003)</a>,<br>
+                    <a href="https://arxiv.org/abs/cond-mat/0301338">arXiv:cond-mat/0301338</a> <strong>[被引用件数:46] (2023/4)</strong><br>
+                    ※出版時に編集者にオーダー記号を勝手に変えられてしまい結構意味不明になってしまったので、Erratumも参照するか、arXiv版を読んでください！
+                </p>
+                
+                <p>
+                    その後だいぶ経って、LSMの原論文で用いられた変分励起状態は、AB磁束を瞬間的に印加するクエンチ操作の後の状態と解釈できることに
+                    気づき、クエンチ後の状態と初期状態（基底状態）の内積で定義される「分極振幅」に興味を持つようになりました。
+                    （電気分極と分極振幅については別項目で書くことにします。）
+                    分極振幅について考えていて煮詰まったのですが、ふと、内積のかわりに、クエンチ後の状態でのハミルトニアンの期待値を考えてはどうかと
+                    思いました。これは、AB磁束の瞬間的な印加に伴うエネルギー増加を与えますが、エネルギー増加と電流の関係を用いると、
+                    これは線形応答の範囲では、光学伝導度の
+                    全周波数積分に関係づけられます。これによって、線形の光学伝導度について知られている「周波数和則」を導くことができます。
+                    さらに、これは線形にとどまらず、任意の次数の非線形伝導度についての周波数和則を自然に導きます。
+                    （このあたりは、Harvard CMSAに滞在していた際、地下のオフィスで唸っているうちにできたような気がします。）
+                    最初、一人で論文を書いたのですが、渡辺悠樹君がいろいろ拡張してくれて、さらに、AB磁束の断熱印加を考えれば
+                    Drude重みのKohn公式の非線形版を導ける、ことを指摘してくれました。
+                    （2003年にDrude重みの論文を書いているので、最初から僕が気づいていても良さそうなものでしたが…）
+                    それでできた論文が↓です。
+                </p>
+                
+                <p>
+                    Haruki Watanabe and Masaki Oshikawa,
+                    <em>Generalized f-sum rules and Kohn formulas on nonlinear conductivities</em>,
+                    <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.165137">Phys. Rev. B 102, 165137 (2020).</a> (open access)
+                    <strong>[被引用件数:23] (2023/4)</strong>
+                </p>
+                
+                <p>
+                    どうでも良い話ですが、この論文は自分としてはかなり気に入っているのですが、PRLに落とされました（そのときはまだKohn公式の部分がなかったかもしれないけど）。
+                    SPT相の論文もそうだったけど、<strong>真に革新的な論文はなかなかレフェリーに評価してもらえない</strong>のだ…
+                </p>
+                <p>
+                    最終的にはこれはLSM定理とはほとんど別の話になったなのですが、磁化プラトーの研究・LSM定理の一般化からの一連の流れがからここに行き着いたのは確かです。
+                    そんなわけで、ひょんなことから(?)非線形伝導の研究に取り組むことになりましたが、
+                    現在もいろいろと関連のトピックを研究中です（2023年4月現在）。
+                </p>
+                
+                <h3>カイラル超流動体の「固有角運動量パラドックス」</h3>
+                
+                <p>
+                    Yasuhiro Tada, Wenxing Nie, and Masaki Oshikawa,
+                    <em>Orbital Angular Momentum and Spectral Flow in Two-Dimensional Chiral Superfluids</em>,
+                    <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.114.195301">Phys. Rev. Lett. 114, 195301 (2015)</a><br>
+                    <a href="https://arxiv.org/abs/1409.7459">arXiv:1409.7459</a> <strong>[被引用件数:69] (2023/4)</strong>
+                </p>
+                
+                <p>
+                    超流動の分野で長年の謎だった「固有角運動量のパラドックス」に、平均場理論の範囲では一定の回答を与えた論文です。
+                    詳しい内容は、<a href="https://www.issp.u-tokyo.ac.jp/maincontents/docs/tayori56-2_Part3.pdf">「物性研だより」に解説記事</a>
+                    を書いたので、そちらをご覧ください。
+                </p>
+                
+                <p>
+                    ここには、余談的なことを書くことにします。
+                    カイラル超流動体の角運動量を、中国からの留学生のWenxingに計算してもらいました。
+                    まず（理想的な円盤上の）カイラルp波超伝導体の場合、BCS領域でも、全粒子がカイラルクーパー対を形成しているかのような
+                    大きな前軌道角運動量を持つことがわかり、これをスペクトラルフローの議論で示すことができました。
+                    これは、ある意味予想通りで、それなりに満足の行く結果でした。
+                </p>
+                
+                <p>
+                    そんな頃、Wenxingがカイラルd波、f波…についても計算してみる、と言い出しました（助教の多田さんがサジェストしてくれたのだったような記憶もあります）。
+                    僕は、「そんなの、結果はp波と同じになるに決まってるんで、やってもあまり収穫がないんじゃないか」と
+                    思ったのですが、僕がウダウダしている間に、Wenxingが計算を進めてしまいました。
+                    すると、「d波、f波…では全角運動量がゼロになってしまう」というのです。
+                    そんなのおかしいので、どこか計算間違ってるんじゃないか、と思ったのですが、結果的にはそれで正しかったのでした。（教訓：押川の言うことをあまり信じてはいけない！）
+                    多田さんは、準古典理論によって、この驚くべき結果を裏付けてくれました。
+                </p>
+                
+                <p>
+                    それらの結果をまとめたのが上記のPRL論文ですが、arXivには2014年9月26日(金)に投稿しました。
+                    arXiv上で公開されたのは同年9月29日（月）日本時間朝(UTC 0時以降）です。
+                    驚いたのは、超伝導やトポロジカル物性の大家、Volovik氏が、我々の論文が公開された42時間以内に、
+                    <a href="https://arxiv.org/abs/1409.8638">我々の論文に対するコメント論文を書き上げてarXivに投稿 (arXiv:1409.8638)</a>したのでした。
+                </p>
+                
+                <figure>
+                    <img src="Volovik-ChiralOAM-comment.png" alt="title and abstract of Volovik's comment">
+                    <figcaption>Volovik氏のコメント論文のタイトルとアブストラクト。"Their general conclusion of the preprint...is confirmed"
+                    まで読んでホッとしました。</figcaption>
+                </figure>
+                
+                <p>
+                    Volovik氏の論文を見つけて、我々の論文がいきなり言及されているのを見て、「これは何か間違いを指摘されるのか？」と一瞬肝を冷やしましたが、
+                    すぐに、Volovik氏も我々の結果を確認していることがわかり、ホッとしました（アブストラクトにそう書いてあった）。
+                    僕自身は超伝導はほとんど研究者としては素人なので（多田さんがいて助かったのですが）論文は書いたものの、ほんとにこれで良いのか、には不安もあったのです。
+                    それにしても、Volovik先生、<strong>42時間以内に他グループの計算を確認して論文も書いてしまう</strong>って、凄くないですか？
+                    いや、凄い人なのは知ってましたが…
+                </p>
+                
+                <p>
+                    さらに、その２日後くらいには、カナダMcMaster大学の
+                    <a href="https://arxiv.org/abs/1410.0377">Kallinらのグループが、かなりオーバーラップする内容の論文をarXivに投稿</a>しました。
+                    こちらは、独立に研究していて、我々の論文を見てあわてて投稿したという感じでした（ちゃんと我々の論文を引用してコメントしてくれています）が、
+                    やはり我々の驚くべき結果（カイラルp波と、d波以上で全く結果が違う）と一致する内容でした。
+                </p>
+                
+                <p>
+                    そんなわけで、知らないうちに超伝導の専門家のグループと競争していた感じですが、先に論文を出せてよかったです。
+                    Volovik氏については、競争というわけではなかったのでしょうが、彼が我々と同じようなアプローチを思いついていたら一瞬でできてしまっていたんでしょうね。
+                </p>
+                
+                <h3>その他、後日追加予定</h3>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 押川研究室. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

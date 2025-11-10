@@ -40,6 +40,7 @@
                 <ul>
                     <li><a href="papers-j-1.html" class="active">第1部</a></li>
                     <li><a href="papers-j-2.html">第2部</a></li>
+                    <li><a href="papers-j-3.html">第3部</a></li>
                 </ul>
             </nav>
         </aside>
@@ -125,120 +126,6 @@
 
 
 
-                
-                
-                <h3>粒子密度の整合性条件 (Lieb-Schultz-Mattis定理の一般化）</h3>
-                
-                <p>
-                    上で触れた「隠れた対称性の一般化」論文の中で、部分的に磁化したAKLT状態を構成して、その状態における隠れた対称性の破れを
-                    論じました。
-                </p>
-                <figure>
-                    <img src="PFAKLT.png" alt="部分的に磁化したAKLT状態">
-                    <figcaption>部分的に磁化したAKLT状態。 M. Oshikawa, J. Phys. Condens. Matter 4, 7469 (1992) より</figcaption>
-                </figure>
-                <p>
-                    それは計算すればできたのですが、「部分的に磁化したAKLT状態」（に近い状態）が物理的にどのような状況で
-                    実現されるのかが気になっていました。予想としては、スピン鎖に磁場をかけたとき、磁化過程の中で現れると思ったのですが、
-                    その意義については混乱したままでした。
-                    当時同じ甲元研にいた山中雅則君とも議論していましたが、そのときはどう理解するべきなのか良くわかりませんでした。
-                </p>
-                
-                <p>
-                    1995年秋から、Ian Affleckのポスドクとしてカナダ・バンクーバーのUniversity of British Columbia (UBC)に行きました。
-                    ↑の、部分的に磁化したAKLT状態の話を相談すると、それはLieb-Schultz-Mattis (LSM)定理に関係するんじゃないか、
-                    とすぐに示唆してくれました。
-                    そこから、U(1)対称性を持つ量子スピン鎖で励起ギャップを持つ「磁化プラトー」が出現するための量子化条件がすぐに導かれました↓
-                </p>
-                
-                <p>
-                    Masaki Oshikawa, Masanori Yamanaka, and Ian Affleck, 
-                    <em>Magnetization Plateaus in Spin Chains: "Haldane Gap" for Half-Integer Spins</em>
-                    <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.78.1984">
-                    Phys. Rev. Lett. 78, 1984 (1997)
-                    </a>,<br>
-                    <a href="https://arxiv.org/abs/cond-mat/9610168">arXiv:cond-mat/9610168</a> <strong>[被引用件数:831] (2023/4)</strong>
-                </p>
-                
-                <p>
-                    その後、LSM定理は（技術的には何の困難もなく）電子系にも適用でき
-                    固体電子論の基本であるLuttinger定理の非摂動論的な「証明」を与えることもわかりました↓
-                </p>
-                
-                <p>
-                    Masanori Yamanaka, Masaki Oshikawa, and Ian Affleck,
-                    <em>Nonperturbative Approach to Luttinger's Theorem in One Dimension,</em>
-                    <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.79.1110">
-                    Phys. Rev. Lett. 79, 1110 (1997)
-                    </a>,<br>
-                    <a href="https://arxiv.org/abs/cond-mat/9701141">arXiv:cond-mat/9701141</a> <strong>[被引用件数:209] (2023/4)</strong>
-                </p>
-                
-                <p>
-                    電子系にも適用してみると、LSM定理の本質は粒子密度と格子の「整合性」にあることがはっきりします。
-                    ミステリアスだったHaldane予想（整数スピン鎖と半奇数スピン鎖の差異）も、
-                    量子スピン鎖を多粒子系と解釈すれば整合性条件の帰結に他なりません。
-                    直観的には、整合性条件は次元によらず重要なはずです。
-                    そこで、LSM定理を高次元に拡張することを考えました。
-                    LSMの原論文の最後の方に、サイズが異方的な極限（縦と横を同時に無限大にするが、縦横比がゼロに近づくようにする）
-                    ではLSMの1次元的な証明が高次元系に適用できることはコメントされているのですが、そういうめっちゃ細長い系を
-                    高次元系とみなして良いのかはよくわかりませんでした。
-                    （今から振り返ってみると、本質的にはそれでも良かった気もします。まあ、これは、
-                    サイズが等方的な高次元系でちゃんと示されたので、そうも思えるのでしょう。）
-                </p>
-                
-                <p>
-                    しばらく糸口がつかめなかったのですが、Laughlinが量子ホール効果でホール伝導度が量子化されることを示す
-                    議論に用いた、Aharonov-Bohm磁束の断熱挿入を考えればよい、とふと思いつきました。
-                    （UBCにいた頃から考えていましたが、これを思いついたのは東工大に移ってからです。）
-                    それで書いたのが↓です。
-                </p>
-                
-                <p>
-                    Masaki Oshikawa, 
-                    <em>Commensurability, Excitation Gap, and Topology in Quantum Many-Particle Systems on a Periodic Lattice</em>,
-                    <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.84.1535">
-                    Phys. Rev. Lett. 84, 1535 (2000),
-                    </a><br>
-                    <a href="https://arxiv.org/abs/cond-mat/9911137">arXiv:cond-mat/9911137</a> <strong>[被引用件数:396] (2023/4)</strong>
-                </p>
-                
-                <p>
-                    この話はAharonov-Bohm磁束の挿入でギャップが閉じない（物理的にはリーズナブルだが非自明な）仮定に依存しているので
-                    ちゃんとした証明ではありませんが、その後Hastingsらによって厳密な証明が与えられています。
-                    （Lieb-Schultz-Mattis-Oshikawa-Hastings theoremと呼ばれることもあります。）
-                    一方、ここで使ったflux insertion argumentはいろいろと応用ができて、この後何度も役に立ちます。
-                    まず、"flux insertion argument"でやはり一般次元のLuttingerの定理の非摂動的な「証明」もできる、
-                    というのが↓の論文です。
-                </p>
-                
-                <p>
-                    Masaki Oshikawa,
-                    <em>Topological Approach to Luttinger's Theorem and the Fermi Surface of a Kondo Lattice</em>,
-                    <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.84.3370">Phys. Rev. Lett. 84, 3370 (2000)</a>,<br>
-                    <a href="https://arxiv.org/abs/cond-mat/0002392">arXiv:cond-mat/0002392</a> <strong>[被引用件数:313] (2023/4)</strong>
-                </p>
-                
-                <p>
-                    この話は、Subir Sachdev氏の<a href="https://www.youtube.com/watch?v=7JfO6ROVZmQ&t=2450s">講義</a>や、
-                    同氏による最近の教科書<a href="https://t.co/bEHeV0nEDK">Quantum Phases of Matter</a>でもかなり丁寧に解説して頂いています。
-                </p>
-                
-                <figure>
-                    <a href="https://www.youtube.com/watch?v=7JfO6ROVZmQ&t=2450s">
-                        <img src="Sachdev-Lecture-Oshikawa.png" alt="Prof. Subir Sachdev lecturing on Oshikawa's non-perturbative argument">
-                    </a>
-                    <figcaption>"Oshikawa's non-perturbative argument"について講義するSubir Sachdev氏 (YouTube ICTS channelより)</figcaption>
-                </figure>
-                
-                <p>
-                    一般化されたLSM定理、あるいは整合性条件による制約、は2010年代以降ふたたび盛んに研究され、さまざまに拡張されています。
-                    LSM原論文の議論の現代的な解説は田崎さんの教科書<a href="https://www.amazon.co.jp/Physics-Mathematics-Quantum-Many-Body-Graduate/dp/3030412644">
-                    Physics and Mathematics of Quantum Many-Body Systems (Graduate Texts in Physics)</a>が、
-                    最近のさまざまな拡張に関する解説は、渡辺悠樹君による <a href="https://www.amazon.co.jp/%E9%87%8F%E5%AD%90%E5%A4%9A%E4%BD%93%E7%B3%BB%E3%81%AE%E5%AF%BE%E7%A7%B0%E6%80%A7%E3%81%A8%E3%83%88%E3%83%9D%E3%83%AD%E3%82%B8%E3%83%BC-%E7%B5%B1%E4%B8%80%E7%9A%84%E3%81%AA%E7%90%86%E8%A7%A3%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%97%E3%81%A6-SGC%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA-%E6%B8%A1%E8%BE%BA-%E6%82%A0%E6%A8%B9/dp/4781915523">
-                    量子多体系の対称性とトポロジー: 統一的な理解を目指して (SGCライブラリ 179)</a>が良いと思います。
-                    僕自身も関連する研究を最近もやっているので、また追記するかもしれません。
-                </p>
             </section>
         </main>
     </div>
